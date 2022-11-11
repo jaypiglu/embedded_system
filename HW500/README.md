@@ -1,1 +1,0 @@
-在stm32執行程式輸出PWM，連接指定的pin及GND到LED兩端，即可使LED按指定週期閃爍，並聯Logic analyzer可觀察輸出波形。
