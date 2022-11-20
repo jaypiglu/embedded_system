@@ -1,0 +1,782 @@
+Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080001bd
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000ca30, Max: 0x00200000, ABSOLUTE, COMPRESSED[0x0000c4e0])
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x0000c35c, Max: 0x00200000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x000001bc   Data   RO        36611    RESET               BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L4S5xI/TOOLCHAIN_ARM/startup_stm32l4s5xx.o
+    0x080001bc   0x00000008   Code   RO        37566  * !!!main             c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__main.o)
+    0x080001c4   0x00000034   Code   RO        38531    !!!scatter          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter.o)
+    0x080001f8   0x0000005a   Code   RO        38529    !!dczerorl2         c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__dczerorl2.o)
+    0x08000252   0x00000002   PAD
+    0x08000254   0x0000001c   Code   RO        38533    !!handler_zi        c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_zi.o)
+    0x08000270   0x00000002   Code   RO        37565    .ARM.Collect$$libinit$$00000000  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit.o)
+    0x08000272   0x00000004   Code   RO        37838    .ARM.Collect$$libinit$$00000001  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000276   0x00000000   Code   RO        37841    .ARM.Collect$$libinit$$00000004  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000276   0x00000008   Code   RO        37842    .ARM.Collect$$libinit$$00000005  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37844    .ARM.Collect$$libinit$$0000000A  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37846    .ARM.Collect$$libinit$$0000000C  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37848    .ARM.Collect$$libinit$$0000000E  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37851    .ARM.Collect$$libinit$$00000011  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37853    .ARM.Collect$$libinit$$00000013  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37855    .ARM.Collect$$libinit$$00000015  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37857    .ARM.Collect$$libinit$$00000017  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37859    .ARM.Collect$$libinit$$00000019  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37861    .ARM.Collect$$libinit$$0000001B  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37863    .ARM.Collect$$libinit$$0000001D  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37865    .ARM.Collect$$libinit$$0000001F  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37867    .ARM.Collect$$libinit$$00000021  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000000   Code   RO        37869    .ARM.Collect$$libinit$$00000023  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800027e   0x00000004   Code   RO        37870    .ARM.Collect$$libinit$$00000024  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000282   0x00000000   Code   RO        37871    .ARM.Collect$$libinit$$00000025  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000282   0x00000000   Code   RO        37875    .ARM.Collect$$libinit$$0000002C  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000282   0x00000000   Code   RO        37877    .ARM.Collect$$libinit$$0000002E  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000282   0x00000000   Code   RO        37879    .ARM.Collect$$libinit$$00000030  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000282   0x00000004   Code   RO        37880    .ARM.Collect$$libinit$$00000031  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000286   0x00000000   Code   RO        37881    .ARM.Collect$$libinit$$00000032  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000286   0x00000002   Code   RO        37882    .ARM.Collect$$libinit$$00000033  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000288   0x00000000   Code   RO        38338    .ARM.Collect$$libshutdown$$00000004  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x08000288   0x00000000   Code   RO        38349    .ARM.Collect$$libshutdown$$0000000F  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x08000288   0x000000c8   Code   RO         1523    .text               BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/TOOLCHAIN_ARM/TARGET_RTOS_M4_M7/irq_cm4f.o
+    0x08000350   0x0000005c   Code   RO        30065    .text               BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/TOOLCHAIN_ARM/except.o
+    0x080003ac   0x00000024   Code   RO        36612    .text               BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L4S5xI/TOOLCHAIN_ARM/startup_stm32l4s5xx.o
+    0x080003d0   0x00000002   Code   RO        37347    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi_2.o)
+    0x080003d2   0x00000004   Code   RO        37356    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_errno_addr_twolibspace.o)
+    0x080003d6   0x000000a6   Code   RO        37372    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_alloc_threads.o)
+    0x0800047c   0x00000076   Code   RO        37374    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_free_threads.o)
+    0x080004f2   0x000000f0   Code   RO        37428    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lludivv7m.o)
+    0x080005e2   0x00000002   PAD
+    0x080005e4   0x000000f8   Code   RO        37466    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fseek.o)
+    0x080006dc   0x00000042   Code   RO        37468    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(ftell.o)
+    0x0800071e   0x00000002   PAD
+    0x08000720   0x0000000c   Code   RO        37472    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(putchar.o)
+    0x0800072c   0x0000004c   Code   RO        37488    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fclose.o)
+    0x08000778   0x00000024   Code   RO        37492    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc_locked.o)
+    0x0800079c   0x00000090   Code   RO        37500    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fflush_locked.o)
+    0x0800082c   0x0000014c   Code   RO        37502    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fopen_locked.o)
+    0x08000978   0x0000001c   Code   RO        37520    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strspn.o)
+    0x08000994   0x00000058   Code   RO        37524    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(memcmp.o)
+    0x080009ec   0x0000003e   Code   RO        37530    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strlen.o)
+    0x08000a2a   0x0000008a   Code   RO        37538    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_v6.o)
+    0x08000ab4   0x00000064   Code   RO        37542    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_w.o)
+    0x08000b18   0x00000010   Code   RO        37548    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(aeabi_memset.o)
+    0x08000b28   0x00000010   Code   RO        37550    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(aeabi_memset4.o)
+    0x08000b38   0x00000044   Code   RO        37552    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr.o)
+    0x08000b7c   0x0000004e   Code   RO        37554    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr_w.o)
+    0x08000bca   0x00000006   PAD
+    0x08000bd0   0x0000007c   Code   RO        37558    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcmpv7em.o)
+    0x08000c4c   0x00000006   Code   RO        37563    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(heapauxi.o)
+    0x08000c52   0x00000002   PAD
+    0x08000c54   0x00000024   Code   RO        37571    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+    0x08000c78   0x00000008   Code   RO        37735    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libspace.o)
+    0x08000c80   0x00000002   Code   RO        37738    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi.o)
+    0x08000c82   0x0000000a   Code   RO        37749    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_heap_descriptor_twolibspace.o)
+    0x08000c8c   0x00000004   Code   RO        37758    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(hguard.o)
+    0x08000c90   0x0000008a   Code   RO        37760    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_alloc.o)
+    0x08000d1a   0x00000012   Code   RO        37768    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_init_threads.o)
+    0x08000d2c   0x00000016   Code   RO        37780    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_rserrno.o)
+    0x08000d42   0x000001d6   Code   RO        37808    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(flsbuf.o)
+    0x08000f18   0x000000f0   Code   RO        37812    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio.o)
+    0x08001008   0x00000068   Code   RO        37821    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(setvbuf_locked.o)
+    0x08001070   0x000001c8   Code   RO        37823    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(initio_locked.o)
+    0x08001238   0x00000016   Code   RO        37828    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(abort.o)
+    0x0800124e   0x00000000   Code   RO        38266    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(maybetermalloc2.o)
+    0x0800124e   0x00000052   Code   RO        38269    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_extend_threads.o)
+    0x080012a0   0x00000040   Code   RO        38301    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(puts_locked.o)
+    0x080012e0   0x0000000e   Code   RO        38315    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_abrt_outer.o)
+    0x080012ee   0x0000000e   Code   RO        38319    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_outer.o)
+    0x080012fc   0x0000000e   Code   RO        38323    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)
+    0x0800130a   0x00000010   Code   RO        38399    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(term_alloc.o)
+    0x0800131a   0x0000000a   Code   RO        38438    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_exit.o)
+    0x08001324   0x00000030   Code   RO        38440    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_abrt_inner.o)
+    0x08001354   0x00000034   Code   RO        38446    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_inner.o)
+    0x08001388   0x00000050   Code   RO        38448    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)
+    0x080013d8   0x0000000a   Code   RO        38476    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_final_threads.o)
+    0x080013e2   0x00000032   Code   RO        38486    .text               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_general.o)
+    0x08001414   0x00000032   Code   RO        30607    .text.$Sub$$__2printf  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08001446   0x0000001c   Code   RO        30621    .text.$Sub$$__2vfprintf  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08001462   0x0000002e   Code   RO        30421    .text.$Sub$$__rt_lib_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08001490   0x00000004   Code   RO        30637    .text.$Sub$$_printf_d  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08001494   0x00000004   Code   RO        30665    .text.$Sub$$_printf_int_dec  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08001498   0x00000004   Code   RO        30711    .text.$Sub$$_printf_percent  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x0800149c   0x00000004   Code   RO        30727    .text.$Sub$$_printf_u  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x080014a0   0x00000014   Code   RO        30757    .text.$Sub$$vsnprintf  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_wrapper.o
+    0x080014b4   0x0000001c   Code   RO           88    .text.BSP_ACCELERO_AccGetXYZ  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.o
+    0x080014d0   0x0000002c   Code   RO           82    .text.BSP_ACCELERO_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.o
+    0x080014fc   0x0000001c   Code   RO           99    .text.BSP_GYRO_GetXYZ  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_gyro.o
+    0x08001518   0x0000002c   Code   RO           93    .text.BSP_GYRO_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_gyro.o
+    0x08001544   0x00000022   Code   RO          104    .text.BSP_HSENSOR_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_hsensor.o
+    0x08001566   0x0000001c   Code   RO          118    .text.BSP_MAGNETO_GetXYZ  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_magneto.o
+    0x08001582   0x00000030   Code   RO          112    .text.BSP_MAGNETO_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_magneto.o
+    0x080015b2   0x00000022   Code   RO          123    .text.BSP_PSENSOR_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_psensor.o
+    0x080015d4   0x0000001a   Code   RO          170    .text.BSP_TSENSOR_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_tsensor.o
+    0x080015ee   0x00000004   Code   RO        36867    .text.CAN1_RX0_IRQHandler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x080015f2   0x00000004   Code   RO        36873    .text.CAN1_SCE_IRQHandler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x080015f6   0x00000004   Code   RO        36871    .text.CAN1_TX_IRQHandler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x080015fa   0x0000000e   Code   RO         2085    .text.EvrRtxKernelError  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08001608   0x0000000c   Code   RO         2101    .text.EvrRtxMessageQueueError  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08001614   0x0000000c   Code   RO         2095    .text.EvrRtxMutexError  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08001620   0x0000000c   Code   RO         2089    .text.EvrRtxThreadError  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800162c   0x0000001a   Code   RO         2103    .text.EvrRtxThreadExit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08001646   0x00000002   PAD
+    0x08001648   0x000001d4   Code   RO        33454    .text.HAL_GPIO_Init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_gpio.o
+    0x0800181c   0x0000009c   Code   RO        36931    .text.HAL_GetTick   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x080018b8   0x0000004a   Code   RO        33845    .text.HAL_I2CEx_ConfigAnalogFilter  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c_ex.o
+    0x08001902   0x00000034   Code   RO        33698    .text.HAL_I2C_DeInit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x08001936   0x000000a0   Code   RO        33694    .text.HAL_I2C_Init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x080019d6   0x00000002   PAD
+    0x080019d8   0x000001c0   Code   RO        33756    .text.HAL_I2C_Mem_Read  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x08001b98   0x000001a4   Code   RO        33752    .text.HAL_I2C_Mem_Write  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x08001d3c   0x0000001c   Code   RO        32601    .text.HAL_Init      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal.o
+    0x08001d58   0x0000000a   Code   RO        36929    .text.HAL_InitTick  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x08001d62   0x00000002   PAD
+    0x08001d64   0x00000092   Code   RO        34005    .text.HAL_LPTIM_Counter_Start  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_lptim.o
+    0x08001df6   0x000000d0   Code   RO        33953    .text.HAL_LPTIM_Init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_lptim.o
+    0x08001ec6   0x0000001e   Code   RO        32812    .text.HAL_NVIC_EnableIRQ  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o
+    0x08001ee4   0x00000056   Code   RO        32810    .text.HAL_NVIC_SetPriority  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o
+    0x08001f3a   0x00000020   Code   RO        32808    .text.HAL_NVIC_SetPriorityGrouping  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o
+    0x08001f5a   0x00000002   PAD
+    0x08001f5c   0x000000e2   Code   RO        34459    .text.HAL_PWREx_ControlVoltageScaling  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x0800203e   0x00000002   PAD
+    0x08002040   0x0000004c   Code   RO        34523    .text.HAL_PWREx_DisableLowPowerRunMode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x0800208c   0x00000012   Code   RO        34521    .text.HAL_PWREx_EnableLowPowerRunMode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x0800209e   0x00000012   Code   RO        34495    .text.HAL_PWREx_EnableSRAM3ContentRetention  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x080020b0   0x00000012   Code   RO        34469    .text.HAL_PWREx_EnableVddIO2  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x080020c2   0x0000003c   Code   RO        34529    .text.HAL_PWREx_EnterSTOP2Mode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x080020fe   0x00000026   Code   RO        34457    .text.HAL_PWREx_GetVoltageRange  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x08002124   0x00000012   Code   RO        34425    .text.HAL_PWR_EnableBkUpAccess  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr.o
+    0x08002136   0x0000004a   Code   RO        34439    .text.HAL_PWR_EnterSLEEPMode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr.o
+    0x08002180   0x00000012   Code   RO        34697    .text.HAL_RCCEx_EnableMSIPLLMode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x08002192   0x00000002   PAD
+    0x08002194   0x000003ae   Code   RO        34659    .text.HAL_RCCEx_PeriphCLKConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x08002542   0x00000002   PAD
+    0x08002544   0x00000242   Code   RO        34637    .text.HAL_RCC_ClockConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08002786   0x00000042   Code   RO        34649    .text.HAL_RCC_GetClockConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x080027c8   0x000000c6   Code   RO        34647    .text.HAL_RCC_GetOscConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x0800288e   0x0000002a   Code   RO        34643    .text.HAL_RCC_GetPCLK1Freq  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x080028b8   0x0000002a   Code   RO        34645    .text.HAL_RCC_GetPCLK2Freq  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x080028e2   0x000000b6   Code   RO        34635    .text.HAL_RCC_GetSysClockFreq  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08002998   0x00000600   Code   RO        34631    .text.HAL_RCC_OscConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08002f98   0x00000060   Code   RO        35431    .text.HAL_TIM_OC_Init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o
+    0x08002ff8   0x000001a2   Code   RO        35439    .text.HAL_TIM_OC_Start  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o
+    0x0800319a   0x00000020   Code   RO        35913    .text.HAL_UARTEx_DisableStopMode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o
+    0x080031ba   0x00000020   Code   RO        35911    .text.HAL_UARTEx_EnableStopMode  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o
+    0x080031da   0x00000064   Code   RO        35761    .text.HAL_UART_Init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x0800323e   0x00000020   Code   RO          176    .text.HTS221_H_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x0800325e   0x00000002   PAD
+    0x08003260   0x000000cc   Code   RO          180    .text.HTS221_H_ReadHumidity  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x0800332c   0x00000014   Code   RO          178    .text.HTS221_H_ReadID  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x08003340   0x00000020   Code   RO          182    .text.HTS221_T_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x08003360   0x0000009e   Code   RO          184    .text.HTS221_T_ReadTemp  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x080033fe   0x00000002   PAD
+    0x08003400   0x0000008e   Code   RO        33840    .text.I2C_IsAcknowledgeFailed  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800348e   0x00000080   Code   RO        33758    .text.I2C_RequestMemoryRead  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800350e   0x00000080   Code   RO        33754    .text.I2C_RequestMemoryWrite  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800358e   0x00000002   PAD
+    0x08003590   0x00000074   Code   RO        33704    .text.I2C_WaitOnFlagUntilTimeout  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x08003604   0x00000048   Code   RO        33708    .text.I2C_WaitOnSTOPFlagUntilTimeout  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800364c   0x00000058   Code   RO        33706    .text.I2C_WaitOnTXISFlagUntilTimeout  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x080036a4   0x000000c8   Code   RO           28    .text.I2Cx_Init     BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x0800376c   0x0000003e   Code   RO           40    .text.I2Cx_ReadMultiple  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x080037aa   0x00000042   Code   RO           36    .text.I2Cx_WriteMultiple  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x080037ec   0x0000001a   Code   RO          192    .text.LIS3MDL_MagDeInit  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lis3mdl/lis3mdl.o
+    0x08003806   0x00000042   Code   RO          190    .text.LIS3MDL_MagInit  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lis3mdl/lis3mdl.o
+    0x08003848   0x0000002a   Code   RO          196    .text.LIS3MDL_MagLowPower  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lis3mdl/lis3mdl.o
+    0x08003872   0x00000012   Code   RO          194    .text.LIS3MDL_MagReadID  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lis3mdl/lis3mdl.o
+    0x08003884   0x0000007c   Code   RO          198    .text.LIS3MDL_MagReadXYZ  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lis3mdl/lis3mdl.o
+    0x08003900   0x00000034   Code   RO          213    .text.LPS22HB_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lps22hb/lps22hb.o
+    0x08003934   0x00000004   Code   RO          203    .text.LPS22HB_P_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lps22hb/lps22hb.o
+    0x08003938   0x00000014   Code   RO          205    .text.LPS22HB_P_ReadID  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lps22hb/lps22hb.o
+    0x0800394c   0x00000058   Code   RO          207    .text.LPS22HB_P_ReadPressure  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lps22hb/lps22hb.o
+    0x080039a4   0x0000015a   Code   RO        37040    .text.LPTIM_IRQHandler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08003afe   0x0000001a   Code   RO          221    .text.LSM6DSL_AccDeInit  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003b18   0x00000038   Code   RO          219    .text.LSM6DSL_AccInit  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003b50   0x0000002a   Code   RO          225    .text.LSM6DSL_AccLowPower  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003b7a   0x00000012   Code   RO          223    .text.LSM6DSL_AccReadID  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003b8c   0x0000007c   Code   RO          227    .text.LSM6DSL_AccReadXYZ  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003c08   0x0000001a   Code   RO          231    .text.LSM6DSL_GyroDeInit  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003c22   0x00000038   Code   RO          229    .text.LSM6DSL_GyroInit  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003c5a   0x0000002a   Code   RO          235    .text.LSM6DSL_GyroLowPower  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003c84   0x00000012   Code   RO          233    .text.LSM6DSL_GyroReadID  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003c96   0x00000002   PAD
+    0x08003c98   0x00000078   Code   RO          237    .text.LSM6DSL_GyroReadXYZAngRate  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08003d10   0x00000042   Code   RO         1771    .text.MessageQueueGet  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08003d52   0x00000002   PAD
+    0x08003d54   0x00000060   Code   RO         1765    .text.MessageQueuePut  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08003db4   0x0000000e   Code   RO         2119    .text.OS_Tick_AcknowledgeIRQ  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08003dc2   0x0000000e   Code   RO         2117    .text.OS_Tick_Disable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08003dd0   0x0000000e   Code   RO         2115    .text.OS_Tick_Enable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08003dde   0x00000008   Code   RO         2123    .text.OS_Tick_GetIRQn  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08003de6   0x00000002   PAD
+    0x08003de8   0x000000cc   Code   RO         2113    .text.OS_Tick_Setup  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08003eb4   0x00000142   Code   RO        34661    .text.RCCEx_PLLSAI1_Config  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x08003ff6   0x00000002   PAD
+    0x08003ff8   0x000000f0   Code   RO        34663    .text.RCCEx_PLLSAI2_Config  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x080040e8   0x00000082   Code   RO        34633    .text.RCC_SetFlashLatencyFromMSIRange  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x0800416a   0x00000004   Code   RO           26    .text.SENSOR_IO_Init  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x0800416e   0x0000001c   Code   RO           38    .text.SENSOR_IO_Read  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x0800418a   0x00000008   Code   RO           42    .text.SENSOR_IO_ReadMultiple  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x08004192   0x00000016   Code   RO           34    .text.SENSOR_IO_Write  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x080041a8   0x00000024   Code   RO        36615    .text.SetSysClock   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L4S5xI/system_clock.o
+    0x080041cc   0x000000b8   Code   RO        36617    .text.SetSysClock_PLL_MSI  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L4S5xI/system_clock.o
+    0x08004284   0x000001b8   Code   RO        36886    .text.Set_GPIO_Clock  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800443c   0x000000b4   Code   RO        36569    .text.SystemCoreClockUpdate  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x080044f0   0x00000052   Code   RO        36567    .text.SystemInit    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x08004542   0x0000011a   Code   RO        35407    .text.TIM_Base_SetConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o
+    0x0800465c   0x00000070   Code   RO         1923    .text.ThreadFlagsCheck  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080046cc   0x00000056   Code   RO         1989    .text.TimerInsert   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08004722   0x000000cc   Code   RO        35767    .text.UART_AdvFeatureConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x080047ee   0x0000006c   Code   RO        35769    .text.UART_CheckIdleState  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x0800485a   0x00000002   PAD
+    0x0800485c   0x00000280   Code   RO        35765    .text.UART_SetConfig  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x08004adc   0x000000ae   Code   RO        35783    .text.UART_WaitOnFlagUntilTimeout  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x08004b8a   0x0000001e   Code   RO        31087    .text._GLOBAL__sub_I_QSPIFBlockDevice.cpp  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/storage/blockdevice/COMPONENT_QSPIF/source/QSPIFBlockDevice.o
+    0x08004ba8   0x00000068   Code   RO         2133    .text._ZL17default_idle_hookv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08004c10   0x00000054   Code   RO        30375    .text._ZL18reserve_filehandlev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004c64   0x00000012   Code   RO         2137    .text._ZL18rtos_event_pendingPv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08004c76   0x0000001c   Code   RO        30359    .text._ZN12DirectSerial4readEPvj  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004c92   0x0000000a   Code   RO        30535    .text._ZN12DirectSerial4seekEli  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004c9c   0x00000006   Code   RO        30541    .text._ZN12DirectSerial4sizeEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004ca2   0x00000004   Code   RO        30537    .text._ZN12DirectSerial5closeEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004ca6   0x00000002   PAD
+    0x08004ca8   0x00000028   Code   RO        30357    .text._ZN12DirectSerial5writeEPKvj  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004cd0   0x00000004   Code   RO        30539    .text._ZN12DirectSerial6isattyEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004cd4   0x0000003a   Code   RO        30355    .text._ZN12DirectSerialC2ERK15serial_pinmap_ti  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004d0e   0x00000004   Code   RO        30533    .text._ZN12DirectSerialD0Ev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004d12   0x00000006   Code   RO        28480    .text._ZN4mbed10FileHandle12enable_inputEb  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/usb/source/USBKeyboard.o
+    0x08004d18   0x00000010   Code   RO        27784    .text._ZN4mbed10FileHandle12set_blockingEb  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x08004d28   0x00000006   Code   RO        28482    .text._ZN4mbed10FileHandle13enable_outputEb  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/usb/source/USBKeyboard.o
+    0x08004d2e   0x00000004   Code   RO        27778    .text._ZN4mbed10FileHandle4syncEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x08004d32   0x0000000a   Code   RO        27060    .text._ZN4mbed10FileHandle4tellEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004d3c   0x00000002   Code   RO        27788    .text._ZN4mbed10FileHandle5sigioENS_8CallbackIFvvEEE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x08004d3e   0x0000000a   Code   RO        27062    .text._ZN4mbed10FileHandle6rewindEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004d48   0x00000006   Code   RO        27064    .text._ZN4mbed10FileHandle8truncateEl  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x08004d4e   0x00000002   Code   RO        29832    .text._ZN4mbed10FileHandleD2Ev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FileHandle.o
+    0x08004d50   0x00000018   Code   RO        27723    .text._ZN4mbed10TimerEvent15insert_absoluteENSt3__26chrono10time_pointINS_15TickerDataClockENS2_8durationIxNS1_5ratioILx1ELx1000000EEEEEEE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x08004d68   0x00000006   Code   RO        27713    .text._ZN4mbed10TimerEvent3irqEj  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x08004d6e   0x0000000c   Code   RO        27717    .text._ZN4mbed10TimerEvent6removeEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x08004d7a   0x00000030   Code   RO        27711    .text._ZN4mbed10TimerEventC2EPK13ticker_data_t  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x08004daa   0x0000008e   Code   RO        30371    .text._ZN4mbed16mbed_file_handleEi  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08004e38   0x0000000c   Code   RO        29786    .text._ZN4mbed19CriticalSectionLockC2Ev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/CriticalSectionLock.o
+    0x08004e44   0x0000000c   Code   RO        29788    .text._ZN4mbed19CriticalSectionLockD2Ev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/CriticalSectionLock.o
+    0x08004e50   0x000000a4   Code   RO        29816    .text._ZN4mbed8FileBase6lookupEPKcj  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x08004ef4   0x0000001e   Code   RO        29845    .text._ZN4mbed8FilePath10fileSystemEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f12   0x0000001c   Code   RO        29849    .text._ZN4mbed8FilePath4fileEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f2e   0x0000000a   Code   RO        29851    .text._ZN4mbed8FilePath6existsEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f38   0x00000016   Code   RO        29847    .text._ZN4mbed8FilePath6isFileEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004f4e   0x00000002   PAD
+    0x08004f50   0x00000084   Code   RO        29839    .text._ZN4mbed8FilePathC2EPKc  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x08004fd4   0x00000026   Code   RO        30314    .text._ZN4mbed8internal13init_os_timerEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x08004ffa   0x00000002   PAD
+    0x08004ffc   0x00000080   Code   RO        30323    .text._ZN4mbed8internal18do_sleep_operationINS0_18timed_predicate_opEEEvRT_  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x0800507c   0x0000003e   Code   RO        30316    .text._ZN4mbed8internal23do_timed_sleep_absoluteENSt3__26chrono10time_pointINS0_7OsClockENS2_8durationIxNS1_5ratioILx1ELx1000EEEEEEEPFbPvESA_  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x080050ba   0x00000040   Code   RO        30318    .text._ZN4mbed8internal45do_timed_sleep_relative_to_acknowledged_ticksENSt3__26chrono8durationIjNS1_5ratioILx1ELx1000EEEEEPFbPvES7_  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x080050fa   0x00000028   Code   RO        29946    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE10start_tickEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005122   0x0000001e   Code   RO        29930    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE11cancel_tickEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005140   0x00000042   Code   RO        29932    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE11cancel_wakeEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005182   0x000000de   Code   RO        29936    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE13set_wake_timeENS2_6chrono10time_pointIS5_NS6_8durationIyS4_EEEE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005260   0x00000024   Code   RO        29952    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE16acknowledge_tickEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005284   0x00000070   Code   RO        29938    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE19update_and_get_tickEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x080052f4   0x00000062   Code   RO        29966    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE7handlerEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005356   0x00000032   Code   RO        29926    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EEC2EPK13ticker_data_t  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08005388   0x00000026   Code   RO        30918    .text._ZN4rtos10ThisThread9sleep_forENSt3__26chrono8durationIjNS1_5ratioILx1ELx1000EEEEE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x080053ae   0x00000004   Code   RO        30916    .text._ZN4rtos10ThisThread9sleep_forEj  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x080053b2   0x00000002   PAD
+    0x080053b4   0x000000a4   Code   RO        30840    .text._ZN4rtos5Mutex11constructorEPKc  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x08005458   0x00000040   Code   RO        30844    .text._ZN4rtos5Mutex4lockEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x08005498   0x00000050   Code   RO        30856    .text._ZN4rtos5Mutex6unlockEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x080054e8   0x0000000e   Code   RO        30838    .text._ZN4rtos5MutexC2Ev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x080054f6   0x0000003a   Code   RO        30361    .text._ZNK12DirectSerial4pollEs  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005530   0x00000056   Code   RO        26315    .text._ZNK12SingletonPtrIN4rtos5MutexEE3getEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08005586   0x00000004   Code   RO        27786    .text._ZNK4mbed10FileHandle11is_blockingEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x0800558a   0x0000005a   Code   RO        29960    .text._ZNK4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE14_elapsed_ticksEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x080055e4   0x00000012   Code   RO        29940    .text._ZNK4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE8get_tickEv  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x080055f6   0x00000002   PAD
+    0x080055f8   0x0000004c   Code   RO        30495    .text._Znaj         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005644   0x0000007c   Code   RO        30487    .text.__cxa_guard_acquire  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080056c0   0x00000046   Code   RO        30489    .text.__cxa_guard_release  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005706   0x00000002   PAD
+    0x08005708   0x00000028   Code   RO        37700    .text.__cxa_pure_virtual  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcppabi_w.l(cxa_virtual.cpp.o)
+    0x08005730   0x0000004e   Code   RO         2028    .text.__rt_entry    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800577e   0x00000002   PAD
+    0x08005780   0x00000068   Code   RO         2032    .text.__user_perthread_libspace  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x080057e8   0x00000004   Code   RO        30423    .text.__user_setup_stackheap  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080057ec   0x00000032   Code   RO        30419    .text._mbed_user_setup_stackheap  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800581e   0x00000034   Code   RO         2036    .text._mutex_acquire  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08005852   0x00000002   PAD
+    0x08005854   0x00000042   Code   RO         2040    .text._mutex_free   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08005896   0x00000002   PAD
+    0x08005898   0x000000a4   Code   RO         2034    .text._mutex_initialize  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800593c   0x00000030   Code   RO         2038    .text._mutex_release  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800596c   0x00000004   Code   RO         1660    .text._platform_post_stackheap_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08005970   0x00000004   Code   RO        30389    .text._sys_close    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005974   0x00000002   Code   RO        30397    .text._sys_exit     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005976   0x0000002a   Code   RO        30417    .text._sys_flen     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080059a0   0x00000004   Code   RO        30405    .text._sys_istty    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080059a4   0x0000008a   Code   RO        30385    .text._sys_open     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005a2e   0x00000006   Code   RO        30407    .text._sys_seek     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005a34   0x00000130   Code   RO        30393    .text._sys_write    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005b64   0x00000018   Code   RO        30399    .text._ttywrch      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08005b7c   0x00000016   Code   RO        30598    .text._wait_us_ticks  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_wait_api_no_rtos.o
+    0x08005b92   0x00000004   Code   RO        37970    .text.abort_message  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcppabi_w.l(abort_message.cpp.o)
+    0x08005b96   0x00000002   PAD
+    0x08005b98   0x000004a0   Code   RO          779    .text.arm_fir_f32   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-dsp/cmsis_dsp/FilteringFunctions/arm_fir_f32.o
+    0x08006038   0x00000020   Code   RO          791    .text.arm_fir_init_f32  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-dsp/cmsis_dsp/FilteringFunctions/arm_fir_init_f32.o
+    0x08006058   0x000000a4   Code   RO         1235    .text.arm_snr_f32   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-dsp/cmsis_dsp/SupportFunctions/math_helper.o
+    0x080060fc   0x00000002   Code   RO        29596    .text.block_us_ticker_free  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x080060fe   0x00000134   Code   RO        36869    .text.can_irq       BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08006232   0x0000003c   Code   RO        30391    .text.close         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800626e   0x0000000c   Code   RO        30197    .text.core_util_are_interrupts_enabled  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x0800627a   0x00000016   Code   RO        30152    .text.core_util_atomic_load_u64  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_atomic_impl.o
+    0x08006290   0x00000088   Code   RO        30203    .text.core_util_critical_section_enter  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08006318   0x00000018   Code   RO        30205    .text.core_util_critical_section_exit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x08006330   0x0000000c   Code   RO        30199    .text.core_util_is_isr_active  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x0800633c   0x00000054   Code   RO        37197    .text.debug         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08006390   0x00000070   Code   RO        30210    .text.error         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08006400   0x00000034   Code   RO         2107    .text.error_msg     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08006434   0x0000002e   Code   RO        30463    .text.exit          BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08006462   0x0000002c   Code   RO        30415    .text.fsync         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800648e   0x0000000a   Code   RO        29499    .text.get_lp_ticker_data  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x08006498   0x00000072   Code   RO        37217    .text.get_uart_index  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800650a   0x0000002e   Code   RO        36894    .text.gpio_dir      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x08006538   0x0000004a   Code   RO        36890    .text.gpio_init     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x08006582   0x00000006   Code   RO        29481    .text.gpio_init_out  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x08006588   0x00000034   Code   RO        29483    .text.gpio_init_out_ex  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x080065bc   0x00000008   Code   RO        36892    .text.gpio_mode     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x080065c4   0x00000068   Code   RO        36888    .text.gpio_set      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800662c   0x00000026   Code   RO        29463    .text.hal_critical_section_enter  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x08006652   0x00000002   PAD
+    0x08006654   0x00000084   Code   RO        29465    .text.hal_critical_section_exit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x080066d8   0x00000164   Code   RO        37228    .text.hal_deepsleep  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/sleep.o
+    0x0800683c   0x00000022   Code   RO        37226    .text.hal_sleep     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/sleep.o
+    0x0800685e   0x00000108   Code   RO        30212    .text.handle_error  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08006966   0x000000b8   Code   RO        37306    .text.init_32bit_timer  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08006a1e   0x0000009e   Code   RO        37195    .text.init_uart     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08006abc   0x0000017c   Code   RO        29560    .text.initialize    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08006c38   0x0000006c   Code   RO        29570    .text.insert_event  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08006ca4   0x00000028   Code   RO        30379    .text.isatty        BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08006ccc   0x00000028   Code   RO        37046    .text.lp_ticker_clear_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006cf4   0x00000074   Code   RO        37038    .text.lp_ticker_disable_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006d68   0x00000036   Code   RO        37048    .text.lp_ticker_fire_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006d9e   0x00000004   Code   RO        37050    .text.lp_ticker_free  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006da2   0x0000000a   Code   RO        37034    .text.lp_ticker_get_info  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006dac   0x00000194   Code   RO        37036    .text.lp_ticker_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006f40   0x00000018   Code   RO        29503    .text.lp_ticker_irq_handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x08006f58   0x00000012   Code   RO        37042    .text.lp_ticker_read  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08006f6a   0x00000002   PAD
+    0x08006f6c   0x00000114   Code   RO        37044    .text.lp_ticker_set_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08007080   0x00000032   Code   RO        30409    .text.lseek         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080070b2   0x00000002   PAD
+    0x080070b4   0x000001dc   Code   RO          261    .text.main          BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x08007290   0x0000001a   Code   RO        30086    .text.mbed_assert_internal  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_assert.o
+    0x080072aa   0x00000002   PAD
+    0x080072ac   0x00000062   Code   RO        30186    .text.mbed_die      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x0800730e   0x00000002   PAD
+    0x08007310   0x0000003a   Code   RO        30234    .text.mbed_error    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0800734a   0x00000020   Code   RO        30188    .text.mbed_error_printf  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x0800736a   0x00000002   PAD
+    0x0800736c   0x00000052   Code   RO        30192    .text.mbed_error_puts  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x080073be   0x00000034   Code   RO        30190    .text.mbed_error_vprintf  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x080073f2   0x00000002   PAD
+    0x080073f4   0x00000100   Code   RO        30068    .text.mbed_fault_handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x080074f4   0x0000000c   Code   RO        30230    .text.mbed_get_error_in_progress  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08007500   0x0000003e   Code   RO        30216    .text.mbed_halt_system  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0800753e   0x00000002   PAD
+    0x08007540   0x0000003c   Code   RO         2048    .text.mbed_init     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x0800757c   0x000003a2   Code   RO        30739    .text.mbed_minimal_formatted_string  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x0800791e   0x00000002   PAD
+    0x08007920   0x0000015c   Code   RO        30741    .text.mbed_minimal_formatted_string_integer  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08007a7c   0x00000046   Code   RO        30743    .text.mbed_minimal_putchar  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08007ac2   0x00000002   PAD
+    0x08007ac4   0x000000b4   Code   RO        29604    .text.mbed_mpu_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mpu/mbed_mpu_v7m.o
+    0x08007b78   0x00000004   Code   RO         2064    .text.mbed_rtos_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08007b7c   0x0000002c   Code   RO         2068    .text.mbed_rtos_init_singleton_mutex  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08007ba8   0x000000a8   Code   RO         2066    .text.mbed_rtos_start  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08007c50   0x0000003e   Code   RO        37079    .text.mbed_sdk_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/mbed_overrides.o
+    0x08007c8e   0x0000001e   Code   RO         2052    .text.mbed_start    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x08007cac   0x0000001a   Code   RO         2030    .text.mbed_toolchain_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08007cc6   0x000000be   Code   RO        30387    .text.open          BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08007d84   0x0000002e   Code   RO         1526    .text.osDelay       BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_delay.o
+    0x08007db2   0x00000032   Code   RO         1610    .text.osKernelGetState  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007de4   0x00000032   Code   RO         1604    .text.osKernelInitialize  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007e16   0x00000026   Code   RO         1624    .text.osKernelResume  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007e3c   0x0000002e   Code   RO         1614    .text.osKernelStart  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007e6a   0x0000002c   Code   RO         1622    .text.osKernelSuspend  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08007e96   0x0000007c   Code   RO         1741    .text.osMessageQueueGet  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08007f12   0x00000084   Code   RO         1739    .text.osMessageQueuePut  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08007f96   0x0000002e   Code   RO         1789    .text.osMutexAcquire  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08007fc4   0x0000002e   Code   RO         1795    .text.osMutexDelete  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08007ff2   0x00000032   Code   RO         1785    .text.osMutexNew    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08008024   0x0000002e   Code   RO         1791    .text.osMutexRelease  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08008052   0x00000002   PAD
+    0x08008054   0x000000fc   Code   RO         2083    .text.osRtxErrorNotify  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08008150   0x00000004   Code   RO         2081    .text.osRtxIdleThread  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08008154   0x00000016   Code   RO         1602    .text.osRtxKernelErrorNotify  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x0800816a   0x00000002   PAD
+    0x0800816c   0x00000086   Code   RO         1679    .text.osRtxMemoryAlloc  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x080081f2   0x00000002   PAD
+    0x080081f4   0x0000004e   Code   RO         1681    .text.osRtxMemoryFree  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x08008242   0x00000038   Code   RO         1677    .text.osRtxMemoryInit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x0800827a   0x0000003a   Code   RO         1687    .text.osRtxMemoryPoolAlloc  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x080082b4   0x0000004a   Code   RO         1689    .text.osRtxMemoryPoolFree  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x080082fe   0x00000002   PAD
+    0x08008300   0x00000052   Code   RO         1685    .text.osRtxMemoryPoolInit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x08008352   0x000000d6   Code   RO         1763    .text.osRtxMessageQueuePostProcess  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08008428   0x0000002c   Code   RO         1731    .text.osRtxMessageQueueTimerSetup  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08008454   0x0000004a   Code   RO         1781    .text.osRtxMutexOwnerRelease  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800849e   0x00000002   PAD
+    0x080084a0   0x00000050   Code   RO         1783    .text.osRtxMutexOwnerRestore  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x080084f0   0x000000a4   Code   RO         1841    .text.osRtxPendSV_Handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x08008594   0x00000076   Code   RO         1843    .text.osRtxPostProcess  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x0800860a   0x00000002   PAD
+    0x0800860c   0x000000a2   Code   RO         1871    .text.osRtxThreadDelayInsert  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080086ae   0x00000046   Code   RO         1867    .text.osRtxThreadDelayRemove  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080086f4   0x000000a2   Code   RO         1857    .text.osRtxThreadDelayTick  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008796   0x00000026   Code   RO         1953    .text.osRtxThreadDestroy  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080087bc   0x000000f8   Code   RO         1863    .text.osRtxThreadDispatch  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080088b4   0x00000064   Code   RO         1945    .text.osRtxThreadFree  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008918   0x00000020   Code   RO         1951    .text.osRtxThreadJoinWakeup  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008938   0x00000012   Code   RO         1849    .text.osRtxThreadListGet  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0800894a   0x00000002   PAD
+    0x0800894c   0x0000002a   Code   RO         1847    .text.osRtxThreadListPut  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008976   0x00000014   Code   RO         1853    .text.osRtxThreadListRemove  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0800898a   0x00000002   PAD
+    0x0800898c   0x00000046   Code   RO         1851    .text.osRtxThreadListSort  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080089d2   0x0000002a   Code   RO         1921    .text.osRtxThreadPostProcess  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080089fc   0x0000003a   Code   RO         1855    .text.osRtxThreadReadyPut  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008a36   0x00000014   Code   RO         1859    .text.osRtxThreadRegPtr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008a4a   0x00000048   Code   RO         1873    .text.osRtxThreadStartup  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008a92   0x00000010   Code   RO         1861    .text.osRtxThreadSwitch  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008aa2   0x00000048   Code   RO         1869    .text.osRtxThreadWaitEnter  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008aea   0x00000002   PAD
+    0x08008aec   0x00000062   Code   RO         1865    .text.osRtxThreadWaitExit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008b4e   0x0000007a   Code   RO         1839    .text.osRtxTick_Handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x08008bc8   0x00000024   Code   RO         1971    .text.osRtxTimerSetup  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08008bec   0x00000022   Code   RO         1975    .text.osRtxTimerThread  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08008c0e   0x00000002   PAD
+    0x08008c10   0x00000078   Code   RO         1973    .text.osRtxTimerTick  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08008c88   0x0000001a   Code   RO         1905    .text.osThreadExit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008ca2   0x0000002a   Code   RO         1881    .text.osThreadGetId  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008ccc   0x00000032   Code   RO         1877    .text.osThreadNew   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08008cfe   0x00000002   PAD
+    0x08008d00   0x0000012c   Code   RO        37085    .text.pin_function  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08008e2c   0x00000088   Code   RO        37087    .text.pin_mode      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08008eb4   0x00000026   Code   RO        29520    .text.pinmap_find_function  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08008eda   0x00000002   PAD
+    0x08008edc   0x00000044   Code   RO        29514    .text.pinmap_merge  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08008f20   0x00000078   Code   RO        29518    .text.pinmap_peripheral  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08008f98   0x00000170   Code   RO        30070    .text.print_context_info  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x08009108   0x000001f0   Code   RO        30214    .text.print_error_report  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x080092f8   0x00000038   Code   RO        37322    .text.restore_timer_ctx  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009330   0x0000000e   Code   RO         2135    .text.rtos_idle_loop  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x0800933e   0x00000038   Code   RO        37320    .text.save_timer_ctx  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08009376   0x00000002   PAD
+    0x08009378   0x0000013c   Code   RO        29566    .text.schedule_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x080094b4   0x0000009e   Code   RO        37193    .text.serial_baud   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08009552   0x00000002   PAD
+    0x08009554   0x00000072   Code   RO        36685    .text.serial_getc   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/serial_device.o
+    0x080095c6   0x00000002   PAD
+    0x080095c8   0x00000278   Code   RO        37189    .text.serial_init   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08009840   0x0000000e   Code   RO        29625    .text.serial_init_direct  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/static_pinmap.o
+    0x0800984e   0x00000092   Code   RO        37219    .text.serial_is_tx_ongoing  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x080098e0   0x0000002a   Code   RO        36687    .text.serial_putc   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/serial_device.o
+    0x0800990a   0x00000024   Code   RO        37209    .text.serial_readable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800992e   0x0000001a   Code   RO        37211    .text.serial_writable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08009948   0x00000060   Code   RO        30338    .text.sleep_manager_lock_deep_sleep_internal  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x080099a8   0x00000024   Code   RO        30346    .text.sleep_manager_sleep_auto  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x080099cc   0x00000064   Code   RO        30340    .text.sleep_manager_unlock_deep_sleep_internal  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x08009a30   0x00000026   Code   RO         1530    .text.svcRtxDelay   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_delay.o
+    0x08009a56   0x0000000c   Code   RO         1612    .text.svcRtxKernelGetState  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08009a62   0x00000148   Code   RO         1642    .text.svcRtxKernelInitialize  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08009baa   0x00000002   PAD
+    0x08009bac   0x00000092   Code   RO         1654    .text.svcRtxKernelResume  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08009c3e   0x000000a8   Code   RO         1644    .text.svcRtxKernelStart  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08009ce6   0x00000060   Code   RO         1652    .text.svcRtxKernelSuspend  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08009d46   0x000000f6   Code   RO         1773    .text.svcRtxMessageQueueGet  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08009e3c   0x00000150   Code   RO         1733    .text.svcRtxMessageQueueNew  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08009f8c   0x000000c0   Code   RO         1769    .text.svcRtxMessageQueuePut  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x0800a04c   0x000000b0   Code   RO         1801    .text.svcRtxMutexAcquire  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800a0fc   0x000000b6   Code   RO         1807    .text.svcRtxMutexDelete  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800a1b2   0x00000078   Code   RO         1797    .text.svcRtxMutexNew  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800a22a   0x00000002   PAD
+    0x0800a22c   0x000000d2   Code   RO         1803    .text.svcRtxMutexRelease  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0800a2fe   0x00000052   Code   RO         1949    .text.svcRtxThreadExit  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0800a350   0x0000000c   Code   RO         1883    .text.svcRtxThreadGetId  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0800a35c   0x00000220   Code   RO         1875    .text.svcRtxThreadNew  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0800a57c   0x00000032   Code   RO        29572    .text.ticker_insert_event_us  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800a5ae   0x00000002   PAD
+    0x0800a5b0   0x00000062   Code   RO        29562    .text.ticker_irq_handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800a612   0x00000022   Code   RO        29578    .text.ticker_read_us  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800a634   0x00000036   Code   RO        29574    .text.ticker_remove_event  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800a66a   0x0000001a   Code   RO        29558    .text.ticker_set_handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800a684   0x0000002a   Code   RO        37304    .text.timer_irq_handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a6ae   0x0000002a   Code   RO         2087    .text.trap_rtx_error  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800a6d8   0x00000086   Code   RO        29564    .text.update_present_time  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800a75e   0x00000012   Code   RO        37318    .text.us_ticker_clear_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a770   0x00000014   Code   RO        37316    .text.us_ticker_disable_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a784   0x00000022   Code   RO        37314    .text.us_ticker_fire_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a7a6   0x0000000a   Code   RO        37302    .text.us_ticker_get_info  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a7b0   0x00000018   Code   RO        37308    .text.us_ticker_init  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a7c8   0x00000018   Code   RO        29594    .text.us_ticker_irq_handler  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x0800a7e0   0x0000000c   Code   RO        37310    .text.us_ticker_read  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a7ec   0x0000001c   Code   RO        37312    .text.us_ticker_set_interrupt  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800a808   0x00000032   Code   RO        30395    .text.write         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800a83a   0x00000006   PAD
+    0x0800a840   0x000003c4   Code   RO        38254    i.__hardfp_log      c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(log.o)
+    0x0800ac04   0x00000004   PAD
+    0x0800ac08   0x00000130   Code   RO        37717    i.__hardfp_log10    c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(log10.o)
+    0x0800ad38   0x000000f8   Code   RO        38394    i.__kernel_poly     c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(poly.o)
+    0x0800ae30   0x00000030   Code   RO        38240    i.__mathlib_dbl_divzero  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(dunder.o)
+    0x0800ae60   0x00000014   Code   RO        38241    i.__mathlib_dbl_infnan  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(dunder.o)
+    0x0800ae74   0x00000004   PAD
+    0x0800ae78   0x00000020   Code   RO        38243    i.__mathlib_dbl_invalid  c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(dunder.o)
+    0x0800ae98   0x0000001a   Code   RO        37459    i.fputc             c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc.o)
+    0x0800aeb2   0x00000010   Code   RO        38256    i.log               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(log.o)
+    0x0800aec2   0x00000018   Code   RO        37895    x$fpl$basic         c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(basic.o)
+    0x0800aeda   0x00000002   PAD
+    0x0800aedc   0x00000062   Code   RO        37574    x$fpl$d2f           c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(d2f.o)
+    0x0800af3e   0x00000002   PAD
+    0x0800af40   0x00000150   Code   RO        37576    x$fpl$dadd          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(daddsub_clz.o)
+    0x0800b090   0x00000018   Code   RO        38351    x$fpl$dcmpinf       c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dcmpi.o)
+    0x0800b0a8   0x000002b4   Code   RO        37585    x$fpl$ddiv          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(ddiv.o)
+    0x0800b35c   0x00000078   Code   RO        37897    x$fpl$deqf          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(deqf.o)
+    0x0800b3d4   0x0000002e   Code   RO        37597    x$fpl$dflt          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dflt_clz.o)
+    0x0800b402   0x00000002   PAD
+    0x0800b404   0x00000154   Code   RO        37602    x$fpl$dmul          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dmul.o)
+    0x0800b558   0x0000009c   Code   RO        37903    x$fpl$dnaninf       c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dnaninf.o)
+    0x0800b5f4   0x0000000c   Code   RO        37905    x$fpl$dretinf       c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dretinf.o)
+    0x0800b600   0x00000016   Code   RO        37577    x$fpl$drsb          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(daddsub_clz.o)
+    0x0800b616   0x00000002   PAD
+    0x0800b618   0x000001dc   Code   RO        37578    x$fpl$dsub          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(daddsub_clz.o)
+    0x0800b7f4   0x00000056   Code   RO        37604    x$fpl$f2d           c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(f2d.o)
+    0x0800b84a   0x0000008c   Code   RO        37907    x$fpl$fnaninf       c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fnaninf.o)
+    0x0800b8d6   0x0000001a   Code   RO        38353    x$fpl$fpinit        c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fpinit.o)
+    0x0800b8f0   0x0000000a   Code   RO        37909    x$fpl$fretinf       c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fretinf.o)
+    0x0800b8fa   0x00000000   Code   RO        37913    x$fpl$usenofp       c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(usenofp.o)
+    0x0800b8fa   0x00000006   PAD
+    0x0800b900   0x00000038   Data   RO        38257    .constdata          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(log.o)
+    0x0800b938   0x00000008   Data   RO        38396    .constdata          c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(qnan.o)
+    0x0800b940   0x000000a8   Data   RO         1666    .rodata             BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800b9e8   0x00000010   Data   RO         2075    .rodata..L__const.mbed_rtos_init_singleton_mutex.singleton_mutex_attr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x0800b9f8   0x00000010   Data   RO        36572    .rodata.AHBPrescTable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x0800ba08   0x00000008   Data   RO        36573    .rodata.APBPrescTable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x0800ba10   0x00000030   Data   RO        36574    .rodata.MSIRangeTable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x0800ba40   0x000000c0   Data   RO        36584    .rodata.PinMap_UART_RX  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L4S5xI/TARGET_B_L4S5I_IOT01A/PeripheralPins.o
+    0x0800bb00   0x000000b4   Data   RO        36583    .rodata.PinMap_UART_TX  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L4S5xI/TARGET_B_L4S5I_IOT01A/PeripheralPins.o
+    0x0800bbb4   0x00000018   Data   RO        35895    .rodata.UARTPrescTable  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x0800bbcc   0x00000074   Data   RO          267    .rodata._ZL11firCoeffs32  BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x0800bc40   0x00000050   Data   RO        30519    .rodata._ZTV12DirectSerial  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800bc90   0x0000000c   Data   RO        27728    .rodata._ZTVN4mbed10TimerEventE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x0800bc9c   0x0000000c   Data   RO        30062    .rodata._ZTVN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EEE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800bca8   0x00000018   Data   RO        30529    .rodata._ZZL15default_consolevE14console_pinmap  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800bcc0   0x00000008   Data   RO        30515    .rodata.__stderr_name  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800bcc8   0x00000007   Data   RO        30513    .rodata.__stdin_name  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800bccf   0x00000008   Data   RO        30514    .rodata.__stdout_name  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800bcd7   0x00000001   PAD
+    0x0800bcd8   0x00000010   Data   RO        35896    .rodata.cst16       BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x0800bce8   0x00000040   Data   RO        37089    .rodata.ll_pin_defines  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x0800bd28   0x00000008   Data   RO        29505    .rodata.lp_data     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x0800bd30   0x00000024   Data   RO        29507    .rodata.lp_interface  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x0800bd54   0x00000008   Data   RO        37052    .rodata.lp_ticker_get_info.info  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0800bd5c   0x00000004   Data   RO         1668    .rodata.osRtxUserSVC  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800bd60   0x00000024   Data   RO         1663    .rodata.os_idle_thread_attr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800bd84   0x00000018   Data   RO         1665    .rodata.os_timer_mq_attr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800bd9c   0x00000024   Data   RO         1664    .rodata.os_timer_thread_attr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800bdc0   0x0000000a   Data   RO          269    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x0800bdca   0x00000013   Data   RO         1669    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800bddd   0x00000010   Data   RO         2073    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x0800bded   0x00000138   Data   RO         2110    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800bf25   0x00000035   Data   RO         2139    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x0800bf5a   0x00000056   Data   RO        26305    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800bfb0   0x0000004e   Data   RO        29922    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800bffe   0x000000c8   Data   RO        30074    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x0800c0c6   0x0000015c   Data   RO        30258    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0800c222   0x00000063   Data   RO        30523    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800c285   0x00000012   Data   RO        30862    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800c297   0x00000034   Data   RO        30930    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x0800c2cb   0x0000002a   Data   RO        37223    .rodata.str1.1      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800c2f5   0x00000003   PAD
+    0x0800c2f8   0x0000000b   Data   RO         1656    .rodata.str1.4      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x0800c303   0x00000001   PAD
+    0x0800c304   0x00000008   Data   RO        29598    .rodata.us_data     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x0800c30c   0x00000024   Data   RO        29600    .rodata.us_interface  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x0800c330   0x00000008   Data   RO        37326    .rodata.us_ticker_get_info.info  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800c338   0x00000020   Data   RO        38528    Region$$Table       anon$$obj.o
+    0x0800c358   0x00000004   Data   RO        31094    .init_array         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/storage/blockdevice/COMPONENT_QSPIF/source/QSPIFBlockDevice.o
+    0x0800c35c   0x00000000   Data   RO        37569    .init_array         c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+
+
+    Execution Region RW_IRAM1 (Base: 0x200001c0, Size: 0x00002fec, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00000184])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200001c0   0x00000004   Data   RW        37485    .data               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001c4   0x00000004   Data   RW        37486    .data               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001c8   0x00000004   Data   RW        37487    .data               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001cc   0x00000004   Data   RW        37814    .data               c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(streamlock.o)
+    0x200001d0   0x0000000c   Data   RW          186    .data.HTS221_H_Drv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x200001dc   0x00000010   Data   RW          187    .data.HTS221_T_Drv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/hts221/hts221.o
+    0x200001ec   0x0000000c   Data   RW          215    .data.LPS22HB_P_Drv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lps22hb/lps22hb.o
+    0x200001f8   0x00000034   Data   RW          200    .data.Lis3mdlMagDrv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lis3mdl/lis3mdl.o
+    0x2000022c   0x00000034   Data   RW          239    .data.Lsm6dslAccDrv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x20000260   0x00000034   Data   RW          240    .data.Lsm6dslGyroDrv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x20000294   0x00000004   Data   RW        36571    .data.SystemCoreClock  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x20000298   0x00000040   Data   RW        30528    .data._ZL11filehandles  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x200002d8   0x00000004   Data   RW         2140    .data._ZL14idle_hook_fptr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x200002dc   0x00000004   Data   RW          263    .data.blockSize     BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x200002e0   0x00000004   Data   RW        29506    .data.irq_handler   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x200002e4   0x00000004   Data   RW        29599    .data.irq_handler   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x200002e8   0x00000004   Data   RW          264    .data.numBlocks     BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x200002ec   0x000000a4   Data   RW         1657    .data.os            BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x20000390   0x00000500   Data   RW          259    .data.refOutput     BUILD/B_L4S5I_IOT01A/ARMC6/arm_fir_data.o
+    0x20000890   0x00000004   Data   RW        32671    .data.uwTickPrio    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal.o
+    0x20000894   0x00000054   Zero   RW        37482    .bss                c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200008e8   0x00000054   Zero   RW        37483    .bss                c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x2000093c   0x00000054   Zero   RW        37484    .bss                c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x20000990   0x00000060   Zero   RW        37736    .bss                c:\Users\howar\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libspace.o)
+    0x200009f0   0x00000004   Zero   RW           90    .bss.AccelerometerDrv  BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.o
+    0x200009f4   0x00000004   Zero   RW          101    .bss.GyroscopeDrv   BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_gyro.o
+    0x200009f8   0x00000001   Zero   RW        37060    .bss.LPTICKER_inited  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x200009f9   0x00000003   PAD
+    0x200009fc   0x00000038   Zero   RW        37061    .bss.LptimHandle    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20000a34   0x00000004   Zero   RW          120    .bss.MagnetoDrv     BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_magneto.o
+    0x20000a38   0x0000004c   Zero   RW        37327    .bss.TimMasterHandle  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x20000a84   0x00000004   Zero   RW        30531    .bss._ZGVZL15default_consolevE7console  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20000a88   0x00000500   Zero   RW          266    .bss._ZL10testOutput  BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x20000f88   0x000000f0   Zero   RW          268    .bss._ZL11firStateF32  BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x20001078   0x00000010   Zero   RW        30521    .bss._ZL13stdio_in_prev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20001088   0x00000010   Zero   RW        30522    .bss._ZL14stdio_out_prev  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20001098   0x00000028   Zero   RW        30518    .bss._ZL16filehandle_mutex  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x200010c0   0x00000004   Zero   RW        31091    .bss._ZN16QSPIFBlockDevice28_active_qspif_flash_csel_arrE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/storage/blockdevice/COMPONENT_QSPIF/source/QSPIFBlockDevice.o
+    0x200010c4   0x00000004   Zero   RW        29822    .bss._ZN4mbed8FileBase5_headE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x200010c8   0x00000028   Zero   RW        29823    .bss._ZN4mbed8FileBase6_mutexE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x200010f0   0x00000004   Zero   RW        29824    .bss._ZN4mbed8FileBase8_defaultE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x200010f4   0x00000004   PAD
+    0x200010f8   0x00000048   Zero   RW        30321    .bss._ZN4mbed8internal12_GLOBAL__N_113os_timer_dataE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x20001140   0x00000004   Zero   RW        30320    .bss._ZN4mbed8internal8os_timerE  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x20001144   0x00000004   Zero   RW        30530    .bss._ZZL15default_consolevE7console  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20001148   0x00001000   Zero   RW         2070    .bss._main_stack    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x20002148   0x00000024   Zero   RW         2071    .bss._main_thread_attr  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x2000216c   0x00000020   Zero   RW         2043    .bss._static_mutexes  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x2000218c   0x000000e0   Zero   RW         2044    .bss._static_mutexes_mem  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x2000226c   0x00000004   Zero   RW        36882    .bss.can_irq_contexts  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x20002270   0x00000001   Zero   RW        29470    .bss.critical_interrupts_enabled  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x20002271   0x00000003   PAD
+    0x20002274   0x00000004   Zero   RW        30207    .bss.critical_section_reentrancy_counter  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x20002278   0x00000002   Zero   RW        30348    .bss.deep_sleep_lock  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x2000227a   0x00000002   PAD
+    0x2000227c   0x00000004   Zero   RW        30255    .bss.error_count    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20002280   0x00000004   Zero   RW        30256    .bss.error_hook     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20002284   0x00000004   PAD
+    0x20002288   0x00000038   Zero   RW        29508    .bss.events         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x200022c0   0x00000038   Zero   RW        29601    .bss.events         BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x200022f8   0x00000034   Zero   RW        30254    .bss.first_error_ctx  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x2000232c   0x00000001   Zero   RW        37055    .bss.future_event_flag  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x2000232d   0x00000003   PAD
+    0x20002330   0x0000004c   Zero   RW           78    .bss.hI2cHandler    BUILD/B_L4S5I_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x2000237c   0x00000001   Zero   RW        30257    .bss.halt_in_progress  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x2000237d   0x00000003   PAD
+    0x20002380   0x00000004   Zero   RW        36881    .bss.irq_handler    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x20002384   0x00000034   Zero   RW        30253    .bss.last_error_ctx  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x200023b8   0x00000001   Zero   RW        37053    .bss.lp_Fired       BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x200023b9   0x00000001   Zero   RW        37057    .bss.lp_cmpok       BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x200023ba   0x00000002   PAD
+    0x200023bc   0x00000004   Zero   RW        37058    .bss.lp_delayed_counter  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x200023c0   0x00000001   Zero   RW        37054    .bss.lp_delayed_prog  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x200023c1   0x00000001   Zero   RW        30252    .bss.mbed_error_in_progress  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x200023c2   0x00000002   PAD
+    0x200023c4   0x00000054   Zero   RW        30075    .bss.mbed_fault_context  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x20002418   0x00000004   Zero   RW        30517    .bss.mbed_heap_size  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x2000241c   0x00000004   Zero   RW        30516    .bss.mbed_heap_start  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x20002420   0x00000004   Zero   RW        37081    .bss.mbed_sdk_inited  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/mbed_overrides.o
+    0x20002424   0x00000004   Zero   RW         2061    .bss.mbed_stack_isr_size  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x20002428   0x00000004   Zero   RW         2060    .bss.mbed_stack_isr_start  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x2000242c   0x00000040   Zero   RW         1662    .bss.os             BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x2000246c   0x000001f0   Zero   RW         2042    .bss.os.libspace    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x2000265c   0x00000034   Zero   RW         1673    .bss.os.msgqueue.cb  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20002690   0x00000050   Zero   RW         1674    .bss.os.msgqueue.mem  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x200026e0   0x00000088   Zero   RW         1670    .bss.os.thread.cb   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20002768   0x00000044   Zero   RW         2072    .bss.os.thread.cb   BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x200027ac   0x00000004   PAD
+    0x200027b0   0x00000300   Zero   RW         1671    .bss.os.thread.idle.stack  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20002ab0   0x00000300   Zero   RW         1672    .bss.os.thread.timer.stack  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20002db0   0x00000001   Zero   RW         2045    .bss.os_kernel_is_active.os_kernel_active  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x20002db1   0x00000001   PAD
+    0x20002db2   0x00000002   Zero   RW        36938    .bss.prev_tick_remainder  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x20002db4   0x00000004   Zero   RW        36937    .bss.prev_time      BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x20002db8   0x00000001   Zero   RW        37056    .bss.roll_over_flag  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20002db9   0x00000003   PAD
+    0x20002dbc   0x00000004   Zero   RW         2076    .bss.singleton_mutex_id  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x20002dc0   0x0000001c   Zero   RW         2074    .bss.singleton_mutex_obj  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x20002ddc   0x00000001   Zero   RW        37059    .bss.sleep_manager_locked  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20002ddd   0x00000003   PAD
+    0x20002de0   0x00000004   Zero   RW          265    .bss.snr            BUILD/B_L4S5I_IOT01A/ARMC6/main.o
+    0x20002de4   0x00000001   Zero   RW        29469    .bss.state_saved    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x20002de5   0x00000003   PAD
+    0x20002de8   0x0000004c   Zero   RW        37222    .bss.stdio_uart     BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x20002e34   0x00000004   Zero   RW        37221    .bss.stdio_uart_inited  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x20002e38   0x00000004   Zero   RW         2109    .bss.terminate_hook  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x20002e3c   0x00000004   Zero   RW        37329    .bss.timer_ccr1_reg  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x20002e40   0x00000004   Zero   RW        37328    .bss.timer_cnt_reg  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x20002e44   0x00000004   Zero   RW        37330    .bss.timer_dier_reg  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x20002e48   0x00000004   Zero   RW        36939    .bss.total_ticks    BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x20002e4c   0x00000360   Zero   RW        36717    .bss.uart_handlers  BUILD/B_L4S5I_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/serial_device.o
+
+
+    Execution Region ARM_LIB_HEAP (Base: 0x200031b0, Size: 0x0009ca50, Max: 0x0009ca50, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200031b0   0x0009ca50   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region RW_IRAM2 (Base: 0x20040000, Size: 0x00000000, Max: 0x00060000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x2009fc00, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2009fc00   0x00000400   Zero   RW            2    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     38214       2414       3032       1732     652812      37148   Object Totals
+         0          0         32          0     642640          0   (incl. Generated)
+       110          0          5          0         40          0   (incl. Padding)
+      8702        630         64         16        348       8088   Library Totals
+        38          4          0          0          0          0   (incl. Padding)
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     46916       3044       3096       1748     653160      38692   Grand Totals
+     46916       3044       3096        388     653160      38692   ELF Image Totals (compressed)
+     46916       3044       3096        388          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                50012 (  48.84kB)
+    Total RW  Size (RW Data + ZI Data)            654908 ( 639.56kB)
+    Total ROM Size (Code + RO Data + RW Data)      50400 (  49.22kB)
+
+==============================================================================
+

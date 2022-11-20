@@ -1,0 +1,1 @@
+Use f32_FIR to filter the input signal, change the input to BSP_MAGNETO, BSP_GYRO, BSP_ACCELERO to get their output from f32_FIR filter, then use python to plot the result.
